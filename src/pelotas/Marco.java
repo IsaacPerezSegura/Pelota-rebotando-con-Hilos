@@ -52,7 +52,6 @@ public class Marco extends JFrame implements Runnable{
     }
     public void comienza_el_juego (){
         listaHilos.add(hilo=new Thread(this));
-        listaHilos.get(cont).setName(String.valueOf(cont));
         pelotas.addItem("Pelota "+(cont+1));
         listaHilos.get(cont).start();
         cont=cont+1;
